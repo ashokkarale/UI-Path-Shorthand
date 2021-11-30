@@ -4,7 +4,9 @@
 `dtStudent.AsEnumerable().Where(Function(row) row("First Name").ToString().StartsWith("R")).Select(Function (row) row("Last Name").ToString()).Distinct().ToList()`
 
   	- Filter DataTable Where a column condition and return DataTable.
-`dtStudent.AsEnumerable().Where(Function (row) cint(row("No")) = 5).CopyToDataTable`
+
+		`dtStudent.AsEnumerable().Where(Function (row) cint(row("No")) = 5).CopyToDataTable`
 
   	- Filter DataTable Where a column condition and return count of the rows returned.
-`dtStudent.AsEnumerable().Where(Function (row) row("First Name").ToString.Length > 5).Count()`
+
+		`dtStudent.AsEnumerable().Where(Function (row) row("First Name").ToString.Length > 5).Count()`
